@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+.logo{
+    padding: 2px;
+}
+.logo2{
+    margin-top: -210px;
+    margin-left: 650px;
+}
+
+
+
+
+
+/* Style for the modal */
+.modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 50px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Style for modal content */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Style for images in modal */
+    .modal-content img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Close button style */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+
+
+    .buy{
+        float: right;
+     margin-top: -150px;
+     height: 100px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button1{
+    float: right;
+    margin-top: -220px;
+    margin-right: 60px;
+    font-size: 40px;
+    background-color: black;
+    border-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+.button1 a:hover{
+    color: chartreuse;
+
+}
+
+header{
+    height: 250px;
+    background-color:#fff;
+}
+
+.ticket1{
+    float: right;
+    margin-top: -75px;
+    margin-right: 100px;
+    font-size: 40px;
+    border-radius: 15px;
+    background-color: blue;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.ticket1 a{
+    color: black;
+}
+
+.ticket1 a:hover{
+    color: #fff;
+    border-radius: 15px;
+    
+}
+
+.header2{
+height: 80px;
+background-color:deeppink;
+}
+.nav1{
+    text-align: center;
+    font-size: 30px;
+    margin-left: -290px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav1,a{
+    text-decoration: none;
+    color: #fff;
+    padding: 22px;
+    
+
+}
+.nav1 a:hover{
+    color: black;
+    background-color: blue;
+    border-radius: 20px;
+
+}
+
+        .top-text {
+            background-color: yellow;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+        }
+
+        .image-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 100px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover .overlay {
+            transform: translateY(0);
+        }
+
+        .entartainment{
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 80px;
+            font-size: 30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .entartainment-img{
+            float: left;
+        }
+
+        .entartainmentpage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .entartainment-item {
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            height:300px;
+            margin-left: 110px;
+        }
+
+        .entartainment-item img {
+            width: 100%;
+            height: 80%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .entartainment-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .ticketprice{
+            background-color:chartreuse;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, san
+        }
+        .en{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: deeppink;
+        }
+
+        
+.ticketprice1{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 32px;
+    justify-content:center;
+
+    
+}
+
+.image-container {
+    position: relative;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.image {
+    max-width: 262px;
+    height: 100px;
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.text-price{
+    margin-top: 100px;
+    color: coral;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.gallery{
+    margin-top: -50px;
+}               
+
+.gallery-text{
+    text-align: center;
+    margin-top: -150px;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.one{
+    margin-top: 220px;
+    margin-left: 300px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.two{
+    margin-top: -310px;
+    margin-left: 410px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.three{
+    margin-top: 18px;
+    margin-left: 410px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.four{
+    margin-top: -310px;
+    margin-left: 520px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.five{
+    margin-top: -310px;
+    margin-left: 630px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.six{
+    margin-top: 18px;
+    margin-left: 630px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.seven{
+    margin-top: -310px;
+    margin-left: 740px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.eight{
+    margin-top: -310px;
+    float: right;
+    margin-right: 535px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.nine{
+    margin-top: -90px;
+    float: right;
+    margin-right: 535px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.ten{
+    margin-top: -200px;
+    float: right;
+    margin-right: -310px;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.ten1{
+    margin-top: -190px;
+    float: right;
+    margin-right: -500px;
+    height: 400px;
+    width: 400px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.container-con{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+        .contact-icons {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 440px;
+            
+        }
+        .icon1{
+            margin-left: 90px;
+            margin-top: -250px;
+        }    
+        
+        .icon2{
+            margin-left: 450px;
+            margin-top: -130px;
+        } 
+        
+        .icon3{
+            margin-left: 800px;
+            margin-top: -135px;
+            
+        }    
+        .contect-us{
+            background-color:turquoise;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            height: 100px;
+            font-size: 30px;
+            margin-top: 310px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .phonea{
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-left: -20px;
+        }
+
+
+         
+    
+        .mango{
+    width: 350px;
+    background-color: transparent;
+    height: 500px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-left: 880px;
+}
+.mango h2{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+.mango .one{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.mango{
+width: 250px;
+height: 380px;
+background: transparent;
+position: absolute;
+margin-top: -650px;
+margin-left: 1100px;
+border: 2px solid gray;
+backdrop-filter: blur(9px);
+border-radius: 10px;
+padding: 25px;
+}
+.mango h2{
+width: 220px;
+font-family: sans-serif;
+text-align: center;
+color: rgb(243, 236, 234);
+font-size: 25px;
+background-color: blue;
+border-radius: 10px;
+margin: 2px;
+padding: 8px;
+}
+
+.mango input{
+width: 240px;
+height: 35px;
+background: transparent;
+border-bottom: 1px solid rgb(22, 22, 22);
+border-top: none;
+border-left: none;
+border-right: none;
+color: rgb(22, 22, 22);
+font-size: 15px;
+letter-spacing: 1px;
+margin-top: 30px;
+font-family:sans-serif;
+} 
+.mango input:focus{
+    outline: none;
+}
+::placeholder{
+color: rgb(12, 12, 12);
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.logoin{
+    width: 240px;
+    height: 40px;
+    background:blue;
+    border: none;
+    margin-top: 30px;
+    margin-left: -20px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+.logoin:hover{
+    background: black;
+    color: #fff;
+}
+.logoin a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.mango .logoin1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.mango .logoin1{
+    text-decoration: none;
+    color: black;
+
+}
+.logoin2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+
+        
+       .about-us{
+            background-color: springgreen;
+            color:#fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: -150px;
+            font-size: 30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       .about-1{
+        margin-top: 50px;
+        margin-left: 250px;
+       }
+       .about-2{
+        float: right;
+        margin-top: -250px;
+        margin-right: 200px;
+       }
+       .about-0{
+        margin-left: 80px;
+        font-size: 40px;
+       }
+
+       .about-3{
+        float: right;
+        margin-top: 40px;
+        margin-right: 280px;
+       }
+       .about-4{
+        margin-top: 100px;
+        margin-left: 200px;
+       }
+       .about-00{
+        margin-left: 80px;
+        font-size: 40px;
+       }
+
+
+
+
+       .sitemap {
+    max-width: 100%;
+    background-color:dodgerblue;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 500px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  .sitemap1{
+    margin-top: 70px;
+  }
+  
+  .sitemap2{
+    margin-top: 70px;
+  }
+  .sitemap3{
+    margin-top: 70px;
+  }
+  
+  .sitemap4{
+    margin-top: -325px;
+    margin-left: 400px;
+  }
+  
+  .sitemap5{
+    margin-top: 60px;
+    margin-left: 400px;
+  }
+ 
+  .sitemap6{
+    margin-top: 80px;
+    margin-left: 400px;
+  }
+
+
+  .mirinda1{
+            float: right;
+            margin-right: 220px;
+            margin-top: -150px;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .mirinda2{
+            float: right;
+            margin-top: -400px;
+            margin-right: 230px;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        .mirinda-ima{
+            float: right;
+            margin-top: -364px;
+            margin-right: 300px;
+           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+        }
+
+
+    </style>
+</head>
+<body>
+<section id="home">   
+
+    <header>
+
+       <p class="logo"><img src="../keansburg park/foo/kpark" height="230px" width=""></p>
+
+       <p class="logo2"><img src="../keansburg park/logo2.jpg" height="200px" width="300px" alt=""></p>
+
+       <p class="button1"><a href="#sign">Sign In</a></p>
+
+   </header>
+
+
+
+
+   <header class="buy">
+    <!-- Image 1 -->
+<img id="myImg1" src="../keansburg park/ne/26033.jpg" alt="Image 1" style="width:200px;height:100px;margin:20px;cursor:pointer;">
+<!-- Image 2 -->
+<img id="myImg2" src="../keansburg park/ne/35845.jpg" alt="Image 2" style="width:200px;height:100px;margin:20px;cursor:pointer;">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="img01" src="" style="width:100%">
+  </div>
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the images and bind them with click event
+  var img1 = document.getElementById("myImg1");
+  var img2 = document.getElementById("myImg2");
+  var modalImg = document.getElementById("img01");
+
+  // When the user clicks on the image, open the modal
+  img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+
+  img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+</script>
+</div>
+
+   </header>
+
+
+    <header class="header2">
+    <nav class="nav1">
+         <a href="#restaurant">Restaurant</a>
+         <a href="#entartainment">Entartainment</a>
+         <a href="#ticket and price">Ticket and Price</a>
+         <a href="#gallery">Gallery</a>
+         <a href="#contect us">Contect us</a>
+         <a href="#about us">About us</a>
+
+     </nav>
+    <div class="ticket1">
+        <a href="#">Buy Ticket</a>
+    </div>
+     </header>
+        <img src="../keansburg park/main.jpg" height="600px" width="1583">
+
+    </section>
+
+
+<section id="restaurant">   
+
+<div class="top-text">
+    <h1>Restaurant</h1>
+    <p>Discover our delicious dishes and cozy atmosphere!</p>
+</div>
+
+<div class="container">
+    <div class="image-container">
+        <img src="../keansburg park/foo/zingar bargar.jpg" alt="Image 1">
+        <div class="overlay">
+            <h3>Zingar Bargar</h3>
+            <p>34.5$</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="../keansburg park/foo/sandwich.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Sandwich</h3>
+            <p>36.8$</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="../keansburg park/foo/tea.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Tea</h3>
+            <p>5.1$</p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="../keansburg park/foo/pizza.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Pizza</h3>
+            <p>40.3$</p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="../keansburg park/foo/nodels.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Nodels</h3>
+            <p>21.3$</p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="../keansburg park/foo/chicken bryani.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Chicken Bryani</h3>
+            <p>59.7$</p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="../keansburg park/foo/fries.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Fries</h3>
+            <p>29.7$</p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <img src="../keansburg park/foo/cool drinks.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Cool Drinks</h3>
+            <p>31.4$</p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="../keansburg park/foo/ice cream.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>Ice cream</h3>
+            <p>39.0$</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="../keansburg park/foo/chocolate.jpg" alt="Image 2">
+        <div class="overlay">
+            <h3>chocolate</h3>
+            <p>8.5$</p>
+        </div>
+    </div>
+    <!-- Repeat for other images -->
+    <!-- Ensure to replace "image1.jpg", "image2.jpg", etc., with your actual image filenames -->
+</div>
+</section>
+
+
+<section id="entartainment">   
+
+
+<div class="entartainment">
+    <h1>Entartainment</h1>
+    <p>keansburg park enjoy it</p>
+</div>
+
+
+<div class="entartainmentpage">
+    <div class="entartainment-item">
+        <img src="../keansburg park/foo/IMG-20240311-WA0011.jpg" alt="Image 1">
+        <p class="en">ASkyRider is a simple but highly addictive thrill ride <br>the unique sensation of flying,</p>
+
+    </div>
+    <div class="entartainment-item">
+        <img src="../keansburg park/foo/IMG-20240311-WA0015.jpg" alt="Image 2">
+        <p class="en">The Booster is an amusement park ride <br> by HUSS Maschinenfabrik starting in 1998.</p>
+
+    </div>
+    <div class="entartainment-item">
+        <img src="../keansburg park/ne/e4.jpg" alt="Image 3">
+        <p class="en">Bumper boats are an amusement park ride that uses inner tube shaped <br>watercraft that can be steered by the rider.</p>
+    </div>
+    <div class="entartainment-item">
+        <img src="../keansburg park/foo/IMG-20240311-WA0019.jpg" alt="Image 4">
+        <p class="en">Slides are usually constructed of plastic or metal and they <br> have a smooth surface </p>
+
+    </div>
+    <div class="entartainment-item">
+        <img src="../keansburg park/foo/IMG-20240311-WA0026.jpg" alt="Image 5">
+        <p class="en">Ride-on toys for kids are the best way to engage <br>them in physical</p>
+
+    </div>
+    <div class="entartainment-item">
+        <img src="../keansburg park/new/pool.jpg" alt="Image 6">
+        <p class="en">A swimming pool, swimming bath, wading pool, paddling pool,<br> or simply pool</p>
+
+    </div>
+</div>
+</section>
+
+
+<section id="ticket and price">   
+
+
+<div class="ticketprice">
+    <h1>Ticket and price</h1>
+    <p>keansburg park enjoy play games and easy buy tickets</p>
+</div>
+
+
+<div class="text-price">    
+    <h3 style=" text-align: center; font-size: 2.0rem;">Ticket and price</h3>
+    </div>
+    <div class="ticketprice1">
+    <!-- Image Containers and Modals for 10 images -->
+    <!-- Image Container 1 -->
+    
+    <div class="image-container" onclick="openModal('modal1')">
+        <img class="image" src="../keansburg park/foo/captian amireca.jpg"  alt="Image 1">
+        <div class="caption">sky ride <br> $295</div>
+    </div>
+    
+    <!-- Image Container 2 -->
+    <div class="image-container" onclick="openModal('modal2')">
+        <img class="image" src="../keansburg park/foo/car slider.jpg" alt="Image 2">
+        <div class="caption">Ludo swing <br> $500 </div>
+    </div>
+    
+    <!-- Image Container 3 -->
+    <div class="image-container" onclick="openModal('modal3')">
+        <img class="image" src="../keansburg park/foo/hours crcal.jpg" alt="Image 3">
+        <div class="caption">Cord swing <br> $350</div>
+    </div>
+    
+    <!-- Image Container 4 -->
+    <div class="image-container" onclick="openModal('modal4')">
+        <img class="image" src="../keansburg park/foo/new.jpg" alt="Image 4">
+        <div class="caption">Erica sofa <br> $1000 </div>
+    </div>
+    
+     <!-- Image Container 5 -->
+     <div class="image-container" onclick="openModal('modal5')">
+        <img class="image" src="../keansburg park/ne/disck game.jpg" alt="Image 5">
+        <div class="caption">Erica sofa <br> $1000 </div>
+    </div>
+    
+    <!-- Image Container 6 -->
+    <div class="image-container" onclick="openModal('modal6')">
+        <img class="image" src="../keansburg park/ne/car ride.jpg" alt="Image 6">
+        <div class="caption">Erica sofa <br> $1000 </div>
+    </div>
+    
+    <!-- Image Container 7 -->
+    <div class="image-container" onclick="openModal('modal7')">
+        <img class="image" src="../keansburg park/ne/games.jpg" alt="Image 7">
+        <div class="caption">Erica sofa <br> $1000 </div>
+    </div>
+    
+    <!-- Image Container 8 -->
+    <div class="image-container" onclick="openModal('modal8')">
+        <img class="image" src="../keansburg park/ne/game2.jpg" alt="Image 8">
+        <div class="caption">Erica sofa <br> $1000 </div>
+    </div>
+
+    <!-- Image Container 9 -->
+    <div class="image-container" onclick="openModal('modal9')">
+        <img class="image" src="../keansburg park/ne/ticket 1.jpg" alt="Image 9">
+        <div class="caption">Erica sofa <br> $1000 </div>
+    </div>
+    <!-- Modals -->
+    <!-- Modal for Image 1 -->
+    <div id="modal1" class="modal" onclick="closeModal('modal1')">
+        <div class="modal-content">
+            <img class="modal-image" src="../keansburg park/foo/captian amireca.jpg" height="200px" alt="Image 1">
+            <div class="caption"> <br> $295</div>
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+        </div>
+    </div>
+    
+    <!-- Modal for Image 2 -->
+    <div id="modal2" class="modal" onclick="closeModal('modal2')">
+        <div class="modal-content">
+            <img class="modal-image" src="../keansburg park/foo/car slider.jpg" alt="Image 2">
+            <div class="caption">Ludo swing <br> $500 </div>
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+        </div>
+    </div>
+    
+    <!-- Modal for Image 3 -->
+    <div id="modal3" class="modal" onclick="closeModal('modal3')">
+        <div class="modal-content">
+            <img class="modal-image" src="../keansburg park/foo/hours crcal.jpg" alt="Image 3">
+            <div class="caption">Cord swing <br> $350</div>
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+        </div>
+    </div>
+    
+    <!-- Modal for Image 4 -->
+    <div id="modal4" class="modal" onclick="closeModal('modal4')">
+        <div class="modal-content">
+            <img class="modal-image" src="../keansburg park/foo/new.jpg" alt="Image 4">
+             <div class="caption">Erica sofa <br> $1000 </div>
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+        </div>
+    </div>
+    
+     <!-- Modal for Image 5 -->
+     <div id="modal5" class="modal" onclick="closeModal('modal5')">
+        <div class="modal-content">
+            <img class="modal-image" src="../keansburg park/ne/disck game.jpg" alt="Image 5">
+             <div class="caption">Erica sofa <br> $1000 </div>
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+        </div>
+    </div> 
+
+    <!-- Modal for Image 6 -->
+    <div id="modal6" class="modal" onclick="closeModal('modal6')">
+        <div class="modal-content">
+            <img class="modal-image" src="../keansburg park/ne/car ride.jpg" alt="Image 6">
+             <div class="caption">Erica sofa <br> $1000 </div>
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+        </div>
+    </div>
+
+     <!-- Modal for Image 7 -->
+     <div id="modal7" class="modal" onclick="closeModal('modal7')">
+        <div class="modal-content">
+            <img class="modal-image" src="../keansburg park/ne/games.jpg" alt="Image 7">
+             <div class="caption">Erica sofa <br> $1000 </div>
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+        </div>
+    </div>
+
+     <!-- Modal for Image 8 -->
+     <div id="modal8" class="modal" onclick="closeModal('modal8')">
+        <div class="modal-c
+        ontent">
+            <img class="modal-image" src="../keansburg park/ne/game2.jpg" alt="Image 8">
+             <div class="caption">Erica sofa <br> $1000 </div>
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    
+    <script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+    }
+    
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+    </script>
+</section>
+    
+
+
+<section id="gallery">   
+
+
+<div class="gallery">
+<img src="../keansburg park/ticket 1.webp" height="250px" width="1580px">
+
+<p class="gallery-text">My Gallery</p>
+
+<div class="one">
+    <img src="../keansburg park/foo/IMG-20240311-WA0003.jpg" height="200px" width="200px">
+</div>
+
+<div class="two">
+    <img src="../keansburg park/foo/IMG-20240311-WA0001.jpg" height="200px" width="200px">
+</div>
+
+<div class="three">
+    <img src="../keansburg park/foo/IMG-20240311-WA0030.jpg" height="200px" width="200px">
+</div>
+
+<div class="four">
+    <img src="../keansburg park/foo/IMG-20240311-WA0033.jpg" height="200px" width="200px">
+</div>
+
+<div class="five">
+    <img src="../keansburg park/foo/IMG-20240311-WA0015.jpg" height="200px" width="200px">
+</div>
+
+<div class="six">
+    <img src="../keansburg park/foo/IMG-20240311-WA0026.jpg" height="200px" width="200px">
+</div>
+
+<div class="seven">
+    <img src="../keansburg park/foo/IMG-20240311-WA0019.jpg" height="200px" width="200px">
+</div>
+
+<div class="eight">
+    <img src="../keansburg park/foo/IMG-20240311-WA0018.jpg" height="200px" width="200px">
+</div>
+
+<div class="nine">
+    <img src="../keansburg park/foo/IMG-20240311-WA0022.jpg" height="200px" width="200px">
+</div>
+
+<div class="ten">
+    <img src="../keansburg park/foo/hours crcal.jpg" height="200px" width="200px">
+</div>
+
+<div class="ten1">
+    <img src="../keansburg park/new/IMG-20240306-WA0024.jpg" height="400px" width="400px">
+</div>
+
+</section>
+
+
+<section id="contect us">   
+
+
+<div class="contect-us">
+    <h1>Contect Us</h1>
+    <p>contect to the park center </p>
+</div>
+<div class="container-con">
+    <div class="contact-icons">
+        <div class="icon1">
+            <img src="../keansburg park/foo/phone1" alt="Phone Icon">
+            <p class="phonea">phone<br>+923053683865<br>+9230252270020</p>
+        </div>
+        <div class="icon2">
+            <img src="../keansburg park/foo/email" alt="Email Icon">
+            <p class="phonea">Email <br>Anwarraza123@gmail.com<br>Anwar123@gmail.com</p>
+
+        </div>
+        <div class="icon3">
+            <img src="../keansburg park/foo/adress.png" height="70px" alt="Address Icon">
+            <p class="phonea">address<br>pakistan karachi<br>karachi</p>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="sign">   
+
+
+<div class="mango">
+
+    <form action="">
+    <h2>Login</h2>
+   <input type="text" name="Username" id="" placeholder="Username">
+   <input type="text" name="password" id="" placeholder="password">
+   <a href="#"><button class="logoin">Login</button></a>
+   <p class="logoin1">Don't have an account<br>
+   <a href="#">Sign up here</a></p>
+   <p class="logoin2">Login with</p>
+
+        </div>
+
+    </section>
+
+
+    <section id="about us">   
+
+
+        <div class="about-us">
+    <h1>About us </h1>
+    <p>keansburg park about</p>
+</div>
+<div class="about-1">
+    <img src="../keansburg park/foo/team management.jpg" height="350px" width="400px">
+</div>
+
+<div class="about-2">
+    <b class="about-0">Team Managment</b>
+    <p>Team management refers to actions, strategies, or methods that brings a group of people together to <br> work effectively as a team and achieve a common goal. There are many tasks that require multiple<br> people, so teams are an essential building block to productivity. Companies rely on teams and<br> effective team management to maintain its operations. </p>
+</div>
+
+<div class="about-3">
+    <img src="../keansburg park/foo/collaboration" height="350px" width="400px">
+</div>
+
+<div class="about-4">
+    <b class="about-00">Team Collaboration</b>
+    <p>Reaching the level of successful team collaboration most managers want can <br> sometimes feel impossible. But its a goal that drives people more than profits. <br> Great team collaboration also leads to stronger company culture and a more <br> productive workplace.</p>
+</div>
+
+</section>
+
+
+
+
+<div class="sitemap">
+    <h1>Keansburg Park</h1>
+    
+  
+      <div class="sitemap1">
+
+        <h2>Home</h2>
+        
+          <p><a href="/main-section-1/page-1">welcome page</a></p>
+          <p><a href="/main-section-1/page-2">keansburg park</a></p>
+          <!-- Add more pages within Main Section 1 -->
+      
+      </div>
+      
+      <div class="sitemap2">
+
+        <h2>Restaurant</h2>
+        
+          <p><a href="/main-section-2/page-1">Healthy food</a></p>
+          <p><a href="/main-section-2/page-2">Beautifull cateen</a></p>
+          <!-- Add more pages within Main Section 2 -->
+        
+      </div>
+
+    <div class="sitemap3">
+
+      <h2>Entartainment</h2>
+        
+      <p><a href="/main-section-1/page-1">Playgrounds</a></p>
+      <p><a href="/main-section-1/page-2">Park Museum</a></p>
+      <!-- Add more pages within Main Section 1 -->
+  
+  </div>
+
+  <div class="sitemap4">
+  
+    <h2>Ticket and Price</h2>
+    
+      <p><a href="/main-section-2/page-1">Family packeg</a></p>
+      <p><a href="/main-section-2/page-2">weekend packeg</a></p>
+      <!-- Add more pages within Main Section 2 -->
+    
+  </div>
+
+  <div class="sitemap5">
+
+  <h2>Gallery</h2>
+        
+    <p><a href="/main-section-1/page-1">park view</a></p>
+    <p><a href="/main-section-1/page-2">Festivals</a></p>
+    <!-- Add more pages within Main Section 1 -->
+
+</div>
+
+  <div class="sitemap6">
+
+  <h2>Contect Us</h2>
+  
+    <p><a href="/main-section-2/page-1">Contect for information</a></p>
+    <p><a href="/main-section-2/page-2">feedback form</a></p>
+    <!-- Add more pages within Main Section 2 -->
+  
+</div>
+      <!-- Add more main sections as needed -->
+
+  </div>
+
+  <div class="mirinda-ima">
+    <img src="../keansburg park/foo/imagesq.png" height="180px">
+  
+</div>
+<p class="mirinda1"> @2024 Keansburg park <a href="#">privacy policy</a></p>
+
+<p class="mirinda2">Proud Partner of Mirinda</p>
+
+  
+</body>
+</html>
